@@ -25,6 +25,7 @@ sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 # Create the new CentOS-Base.repo file with the Vault repository URLs
 echo "Updating the repository configuration to use CentOS Vault repositories..."
 sudo tee /etc/yum.repos.d/CentOS-Base.repo > /dev/null <<EOL
+
 [base]
 name=CentOS-7 - Base
 baseurl=http://vault.centos.org/7.9.2009/os/\$basearch/
